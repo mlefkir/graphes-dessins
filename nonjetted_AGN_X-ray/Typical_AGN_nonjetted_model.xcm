@@ -1,0 +1,32 @@
+statistic chi
+method leven 10 0.01
+abund wilm
+xsect vern
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  zxipcf*cutoffpl    +    atable{models/relxill/xillver-a-Ec5.fits}    +  diskbb  +   atable{models/relxill/xillver-a-Ec5.fits}
+              5        0.1       0.05       0.05        500        500
+            1.5       0.01         -3         -3          6          6
+              1       0.01          0          0          1          1
+              0      -0.01     -0.999     -0.999         10         10
+            1.9       0.01         -3         -2          9         10
+            150       0.01       0.01          1        500        500
+           0.35       0.01          0          0      1e+20      1e+24
+= p5
+              2       0.01        0.5        0.5         10         10
+            2.5       0.01          0          0    4.69897    4.69897
+= p6
+             50       0.01    18.1949    18.1949     87.134     87.134
+              0     -0.001          0          0          5          5
+          5e-06       0.01          0          0      1e+20      1e+24
+           0.05       0.01          0          0       1000       1000
+          1e+07       0.01          0          0      1e+20      1e+24
+= p5
+              2       0.01        0.5        0.5         10         10
+              0       0.01          0          0    4.69897    4.69897
+= p6
+= p12
+              0     -0.001          0          0          5          5
+          0.001       0.01          0          0      1e+20      1e+24
+bayes off
